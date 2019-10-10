@@ -1,6 +1,9 @@
 from matplotlib.pylab import *
 from scipy.integrate import odeint
+from time import time
 import random
+
+tiempoInicial = time()
 
 # Unidades base SI (m, kg, s)
 _m = 1.
@@ -131,6 +134,10 @@ for i in range(nparticulas):
 
 ax.axhline(d/2,color = "k", linestyle = "--")
 
+
+tiempoFinal = time()
+tiempoTotal = tiempoFinal - tiempoInicial
+print tiempoTotal
 
 
 show()
