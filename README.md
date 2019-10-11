@@ -72,6 +72,7 @@ Con 15 partículas se demoro 206,161 segundos y quedo el siguiente gráfico:
 Con 20 partículas se demoro 403,847 segundos y quedo el siguiente gráfico:
 ![Imagen proyecto 2 (20 particulas)](https://user-images.githubusercontent.com/53590243/66687210-475c0180-ec58-11e9-94b6-fb4d1bd4972a.png)
 
+Estos gráficos representan el movimiento de N partículas a lo largo de un río, se puede apreciar como estás partículas rebotan al fondo del río y siguen su transcurso o como tambien chocan entre ellas y cambian su movimiento pero siempre con la misma direccion en donde fluye el río. El tiempo máximo que se tomo para estas pruebas fue de 0,5 segundos.
 # Datos Pc:
 
 Marca: HP
@@ -84,3 +85,5 @@ Tipo de sistema: Sistema operativo de 64 bits, procesador x64
 
 Lápiz y entrada táctil: La entrada táctil o manuscrita no está disponible para está pantalla
 
+El comportamiento de mi computador no es el mejor, ya que demora mucho en arrojar algún resultado. Puede ser por tema de que no tengo linux instalado o tengo mucha memoria utilizada. 
+Para poder obtener un mejor resultado del tiempo se realizaron 3 iteraciones por cada experimento, donde se calculo un promedio y ese fue puesto en los resultados.
