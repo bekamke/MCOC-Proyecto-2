@@ -1,10 +1,8 @@
 from matplotlib.pylab import *
 from scipy.integrate import odeint
-from time import time
 import random
-
+from time import time
 tiempoInicial = time()
-
 # Unidades base SI (m, kg, s)
 _m = 1.
 _kg = 1.
@@ -15,7 +13,7 @@ _gr = 1e-3*_kg
 _in = 2.54*_cm
 
 g = 9.81*_m/(_s**2)         # gravedad
-d = 5.*_mm
+d = 15.*_mm
 
 rho_agua = 1000.*_kg/(_m**3)                   # diametro de la particula
 rho_particula = 2650*_kg/(_m**3)      # densidad de la particula, considerando que sea arena 
@@ -67,7 +65,7 @@ def velocitiy_field(x):
 
 
 vfx = velocitiy_field([0,4*d])[0]
-k_penal = 100.*0.5*Cd*rho_agua*A*norm(vfx)**2/(1*_mm) #cambiar v0 por vfx
+k_penal = 100.*0.5*Cd*rho_agua*A*norm(vfx)**2/(1*_mm) 
 
 
 def particula(z,t):
@@ -93,21 +91,43 @@ def particula(z,t):
 		zp[4*i:(4*i+2)] = vi
 		zp[4*i+2:(4*i+4)] = Fi/m
 
-		for i in range(nparticulas):
-			xi = z[4*i:(4*i+2)]
-			for j in  range(nparticulas):
-				if i > j:
-					xj = z[4*j:(4*j+2)]
-					rij = xj -xi
-					if norm(rij) < d:
-						delta = d - norm(rij)
-						nij = rij/norm(rij)
-						Fj = k_penal*delta*nij
-						Fi = -k_penal*delta*nij
-						zp[4*i+2:(4*i+4)] += Fi/m
-						zp[4*j+2:(4*j+4)] += Fj/m
+	for i in range(nparticulas):
+		xi = z[4*i:(4*i+2)]
+		for j in  range(nparticulas):
+			if i > j:
+				xj = z[4*j:(4*j+2)]
+				rij = xj -xi
+				if norm(rij) < d:
+					delta = d - norm(rij)
+					nij = rij/norm(rij)
+					Fj = k_penal*delta*nij
+					Fi = -k_penal*delta*nij
+					zp[4*i+2:(4*i+4)] += Fi/m
+					zp[4*j+2:(4*j+4)] += Fj/m
 	
 	return zp
+
+
+def fuerzas_hidrodinamicas(x,v,d,area,masa):
+
+	xtop = x + (d/2)*jhat
+	xbot = x - (d/2)*jhat
+	vf = velocity_field(x + 0*jhat)
+
+	vrelf_top = abs(velocity_field(xtop)[0])
+	vrelf_bot = abs(velocity_field(xbot)[0])
+
+	vrel = vf - v
+
+	Cd = 0.47
+	fD = (0.5*Cd*alpha*rho_agua*norm(vrel)*area)*vrel
+
+	fL = (0.5*CL*alpha*rho_agua*(vrelf_top - vrelf_bot)*area)*vrel[0]*jhat
+	fW = (-masa*g)*jhat
+
+	Fh = fW + fD + fL
+
+	return Fh
 
 
 z0 = zeros(4*nparticulas)
@@ -135,9 +155,16 @@ for i in range(nparticulas):
 ax.axhline(d/2,color = "k", linestyle = "--")
 
 
+d = 0.15e-3
+x = linspace(0, 20*d,4000)
+x_mod_d = (x % d) - d/2
+y = sqrt((d/2)**2 - x_mod_d**2)
+
+plot(x, y)
+axis("equal")
+
 tiempoFinal = time()
+
 tiempoTotal = tiempoFinal - tiempoInicial
 print tiempoTotal
-
-
 show()
