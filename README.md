@@ -36,40 +36,40 @@ El desplazamiento en x de la partícula según la velocidad con que se mueve se 
 
 # Con N particulas
 # Discusion resultados
-Con 1 particula se demoro  segundos y quedo el siguiente gráfico:
+Con 1 partícula se demoro 0,720 segundos y quedo el siguiente gráfico:
+![Imagen proyecto 2 (1 particula)](https://user-images.githubusercontent.com/53590243/66688211-0239ce80-ec5c-11e9-9d84-ab314a6092a4.png)
 
+Con 2 partículas se demoro 3,384 segundos y quedo el siguiente gráfico:
+![Imagen proyecto 2 (2 particulas)](https://user-images.githubusercontent.com/53590243/66688151-cdc61280-ec5b-11e9-80fd-5acf161fb165.png)
 
+Con 3 partículas se demoro 5,584 segundos y quedo el siguiente gráfico:
+![imagen proyecto 2 (3 particulas)](https://user-images.githubusercontent.com/53590243/66688105-95263900-ec5b-11e9-9b1a-3157bfa4f0d1.png)
 
-Con 2 particulas se demoro  segundos y quedo el siguiente gráfico:
+Con 4 partículas se demoro 13,289 segundos y quedo el siguiente grafico:
+![Imagen proyecto 2 (4 particulas)](https://user-images.githubusercontent.com/53590243/66687942-f26dba80-ec5a-11e9-9628-d23fe199064e.png)
 
+Con 5 partículas se demoro 19,503 segundos y quedo el siguiente gráfico:
+![Imagen proyecto 2 (5 particulas)](https://user-images.githubusercontent.com/53590243/66688026-3cef3700-ec5b-11e9-9d66-6a0eb67eb08b.png)
 
-Con 3 particulas se demoro segundos y quedo el siguiente gráfico:
+Con 6 partículas se demoro 29,232 segundos y quedo el siguiente gráfico:
+![Imagen proyecto 2 (6 particulas)](https://user-images.githubusercontent.com/53590243/66687883-c4887600-ec5a-11e9-81ba-c67d17ff9934.png)
 
+Con 7 partículas se demoro 29,996 segundos y quedo el siguiente gráfico:
+![Imagen proyecto 2 (7 particulas)](https://user-images.githubusercontent.com/53590243/66687835-812e0780-ec5a-11e9-88ec-3b6b8192de75.png)
 
+Con 8 partículas se demoro 40,451 segundos y quedo el siguiente gráfico:
+![Imagen proyecto 2 (8 particulas)](https://user-images.githubusercontent.com/53590243/66687671-db7a9880-ec59-11e9-8750-ffc33ddbbf79.png)
 
-Con 4 particulas se demoro  segundos y quedo el siguiente grafico:
+Con 9 partículas se demoro 47,589 segundos y quedo el siguiente gráfico:
+![Imagen proyecto 2 (9 particulas)](https://user-images.githubusercontent.com/53590243/66687619-9ce4de00-ec59-11e9-85d2-3232983b1ead.png)
 
-Con 5 particulas se demoro 36,367 segundos y quedo el siguiente gráfico:
-![imagen proyecto 2 (5 particulas)](https://user-images.githubusercontent.com/53590243/66686795-fac3f680-ec56-11e9-9285-7e692f11deda.png)
-
-
-Con 6 particulas se demoro  segundos y quedo el siguiente gráfico:
-
-
-Con 7 particulas se demoro  segundos y quedo el siguiente gráfico:
-
-
-Con 8 particulas se demoro  segundos y quedo el siguiente gráfico:
-
-Con 9 particulas se demoro  segundos y quedo el siguiente gráfico:
-
-Con 10 particulas se demoro 50,04 segundos y quedo el siguiente gráfico:
+Con 10 partículas se demoro 50,04 segundos y quedo el siguiente gráfico:
 ![imagen proyecto 2 (10 particulas)](https://user-images.githubusercontent.com/53590243/66686819-09121280-ec57-11e9-8e69-c6dd634b14e1.png)
 
-Con 15 particulas se demoro 206,161 segundos y quedo el siguiente gráfico:
+Con 15 partículas se demoro 206,161 segundos y quedo el siguiente gráfico:
 ![Imagen proyecto 2 (15 particulas)](https://user-images.githubusercontent.com/53590243/66687420-f6004200-ec58-11e9-8a94-4f25e1ce0bd7.png)
 
-Con 20 particulas se demoro 403,847 segundos y quedo el siguiente gráfico:
+Con 20 partículas se demoro 403,847 segundos y quedo el siguiente gráfico:
 ![Imagen proyecto 2 (20 particulas)](https://user-images.githubusercontent.com/53590243/66687210-475c0180-ec58-11e9-94b6-fb4d1bd4972a.png)
 
 # Datos Pc:
