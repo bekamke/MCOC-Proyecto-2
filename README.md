@@ -1,3 +1,5 @@
+* Subi dos codigos, en el Saltation_many_particles_validation1.py está el codigo que me pudo arrojar algo y en el codigo Saltation_many_particles_validation2.py es un codigo que creamos pero no me dejo correr en mi computador.*
+
 # MCOC-Proyecto-2 (Benjamín Kamke) (Individual)
 
 # INTRODUCCION:
